@@ -35,7 +35,8 @@ What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
 // Same algorithm, same runtime from my graph search assignment
+// Of course this DFS does not tell us everything about the runtime of the maximum flow algorithm that it is attached to, only that it will be at least $\Theta (|E| + |V|)$ 
 
-Worst case runtime: $\Theta (|E| + |V|)$ where V is the number of nodes/vertices in the graph and E the number of edges in the graph
+Worst-case runtime: $\Theta (|E| + |V|)$ where V is the number of nodes/vertices in the graph and E the number of edges in the graph
 
-Reasoning: In the worst case the algorithm will need to visit every single node in the entire graph, and for every node it needs to scan every single edge. Thus, the runtime of the DFS implementation is $\Theta (|E| + |V|)$
+Reasoning: In any case the algorithm will need to visit every single node in the entire graph to determine the shortest path, and for every node it needs to scan every single edge. Thus, the runtime of this DFS implementation is $\Theta (|E| + |V|)$
